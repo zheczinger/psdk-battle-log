@@ -18,12 +18,12 @@ To open the battle log, press the `L` game button while in the player choice men
 
 | Game Button | Action |
 | -- | -- |
-| 🡅 | Scroll up 1 message |
-| 🡇 | Scroll down 1 message |
-| 🡄 | Go back 1 turn |
-| 🡆 | Go forward 1 turn |
-| C | Expand or collapse the selected message |
-| B | Return to the player menu, or collapse the selected message if expanded |
+| :arrow_up: | Scroll up 1 message |
+| :arrow_down: | Scroll down 1 message |
+| :arrow_left: | Go back 1 turn |
+| :arrow_right: | Go forward 1 turn |
+| **`C`** | Expand or collapse the selected message |
+| **`B`** | Return to the player menu, or collapse the selected message if expanded |
 
 ## :package: Installation
 **To install:**
@@ -33,7 +33,7 @@ To open the battle log, press the `L` game button while in the player choice men
 4. Enter `psdk --util=plugin load` in the command prompt.
 5. Put the downloaded .csv file in the `Data/Text/Dialogs` folder in your project.
 
-If you're already using the `193208.csv` filename for a different file, then you can rename this plugin's CSV file to a different `1NNNNN.csv` file. Change the number in the `csv_id` field in this plugin's JSON config file to the `NNNNN` number you picked.
+If you're already using the `193207.csv` filename for a different file, then you can rename this plugin's CSV file to a different `1NNNNN.csv` file. Change the number in the `csv_id` field in this plugin's JSON config file to the `NNNNN` number you picked.
 
 **To uninstall:**
 1. Delete `ZVBattleLog.psdkplug` from the `scripts` folder in your project.
