@@ -4,6 +4,7 @@ authors:
 - zhec
 version: 0.1.0.0
 deps: []
+psdk_compatibility_script: psdk.rb
 retry_psdk_compatibility_after_plugin_load: false
 added_files:
 - graphics/interface/zv-battle-log/**/*.png
