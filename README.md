@@ -98,8 +98,7 @@ end
 - [Modernized Battle Messages for PSDK](https://github.com/zheczinger/psdk-modernized-battle-messages): Requires v0.5.1 or newer version of that plugin to be compatible with this plugin. Battle messages replaced or silenced by that plugin are preserved in this plugin's battle log.
 
 ## :mega: Credits
-**Author:**
-- zhec
+See [LICENSE](LICENSE.md).
 
 [release-badge]: https://img.shields.io/github/v/release/zheczinger/psdk-battle-log?display_name=release&color=blue
 [psdk-version-badge]: https://img.shields.io/badge/psdk-.26.52+-6961F6
