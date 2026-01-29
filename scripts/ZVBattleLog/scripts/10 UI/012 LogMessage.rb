@@ -58,8 +58,12 @@ module ZVBattleLogUI
       ).start
     end
 
+    # Get a version of the message that complies with the font and is possibly truncated to fit in 1 line
+    # @param message [String]
+    # @return [Array<String, Boolean>] Adjusted message, and whether it was truncated
     def adjust_message(message)
-      message = message.dup.gsub('’', '\'')
+      message = message.dup
+      replace_unsupported_chars(message)
       return message, false if @text.text_width(message) <= max_text_width
 
       text_width = ->(n) { @text.text_width(message[0, n]) }
@@ -67,6 +71,13 @@ module ZVBattleLogUI
       nchars -= 1 until text_width.call(nchars) <= max_text_width
       nchars += 1 until text_width.call(nchars) > max_text_width
       return message[0, nchars - 1], true
+    end
+
+    # Replace characters that the font (Power Greeb Small) doesn't support
+    # @param message [String]
+    def replace_unsupported_chars(message)
+      message.gsub!('’', '\'')
+      message.gsub!('…', '...')
     end
 
     # Base top-left coordinates of the UI element

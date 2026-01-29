@@ -1,5 +1,8 @@
 ### Author
-- zhec
+- [zhec](https://github.com/zheczinger)
+
+### Contributors
+- [Aelysya](https://github.com/Aelysya/)
 
 ### Attribution
 - This work contains inspirations from and copies of UI assets from [PSDK Technical Demo](https://github.com/PokemonWorkshop/PSDKTechnicalDemo) by [Pokémon Workshop](https://github.com/PokemonWorkshop). PSDK Technical Demo is licensed under MIT. See the included [notice](graphics/interface/zv-battle-log/LICENSE).
